@@ -1,0 +1,42 @@
+/* index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional global base styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* REMOVE this: */
+  /* overflow: hidden; */
+  
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
+
+html, #root {
+  height: 100%;
+}
+
+/* Remove default Leaflet popup background & pointer */
+.leaflet-popup-content-wrapper {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.leaflet-popup-tip {
+  display: none !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  width: auto !important;
+}
